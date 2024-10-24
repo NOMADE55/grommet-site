@@ -5,6 +5,7 @@ import Item from './Components/Item';
 import {
   GenericA11yTitle,
   GenericAlignSelf,
+  GenericBackground,
   GenericBoolTrue,
   GenericBool,
   GenericBoolFalse,
@@ -641,6 +642,24 @@ const SelectPage = () => (
           </Description>
           <PropertyValue type="object">
             <Example defaultValue>{`{ color: "dark-3" }`}</Example>
+          </PropertyValue>
+        </Property>
+
+        <Property name="select.clear.hover.background">
+          <Description>
+            Adjustments to the default clear button background style when the
+            button is hovered.
+          </Description>
+          <GenericBackground />
+        </Property>
+
+        <Property name="select.clear.hover.text">
+          <Description>
+            Adjustments to the default clear button text style when the text is
+            hovered.
+          </Description>
+          <PropertyValue type="object">
+            <Example>{`{ color: "text" }`}</Example>
           </PropertyValue>
         </Property>
 
